@@ -1,0 +1,15 @@
+/* Minimal, clear styling for beginners */
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f3f4f6; }
+.calc { width: 360px; padding: 12px; background: white; border: 1px solid #ddd; border-radius: 8px; }
+.screen { padding: 8px; border-bottom: 1px solid #eee; margin-bottom: 10px; }
+#mini { color: #666; font-size: 12px; text-align: right; min-height: 16px; }
+#display { font-size: 32px; text-align: right; font-weight: 600; }
+.row { display: flex; gap: 8px; margin: 8px 0; flex-wrap: nowrap; overflow-x: auto; }
+.row button { flex: 0 0 auto; padding: 10px 12px; font-size: 16px; border-radius: 6px; border: 1px solid #ccc; background: #fafafa; cursor: pointer; }
+.row button:active { transform: translateY(1px); }
+.numbers { justify-content: flex-start; }
+.ops button { background: #eaf2ff; border-color: #cfe0ff; }
+.controls button { background: #fff7e6; border-color: #ffe7b3; }
+.row::-webkit-scrollbar { height: 8px; }
+.row::-webkit-scrollbar-thumb { background: #ddd; border-radius: 4px; }
